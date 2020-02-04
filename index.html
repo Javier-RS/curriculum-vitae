@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cvitae</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+  </head>
+  <body>
+  
+   
+
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"> Cvitae</label>
+      <ul>
+       
+      <li>
+          <a href="#Datos">Datos</a>
+      </li> 
+      <li>
+          <a href="#Historial">Historial</a>
+      </li>
+      <li>
+          <a href="#Herramientas">Herramientas</a>
+      </li>
+      <li>
+          <a href="#Bases">Bases</a>
+      </li>
+      <li>
+          <a href="#Lenguajes">Lenguajes</a>
+      </li>
+      </ul>
+    </nav>
+   
+    <div class="contenedor">
+		<article >
+			
+         
+            <img src="img/img1.jpg" alt="imagen xd" class="imge">
+          
+           
+            <br>
+         <h2 id="Datos" class="ancla"> Datos </h2>
+         <hr>
+            <br>
+            <p><span>NOMBRE: </span>JAVIER RODRIGUEZ SUAREZ</p>
+            <p><span>CIUDAD: </span>NUEVO LAREDO TAMPS.</p>
+            <P><SPAN>EDAD: </SPAN> 20 AÑOS </P>
+            <P><SPAN>TELEFONO: </SPAN>867-XXX-XXXX </P>
+            <P><SPAN>CORREO ELECTRONICO: </SPAN>JAVIER@OUTLOOK.COM</P>
+            <P><SPAn>DIRECCION: </SPAn>ARTISTAS #xx NUEVO LAREDO TAMPS. </P>
+            <P id="Historial"><SPAN>ESTADO CIVIL: </SPAN>SOLIN</P>
+
+        </article >
+        
+    </div>
+    <div class="contenedor">
+		<article>
+			<h2 >Historial Academico</h2>
+			<hr>
+                <span>PRIMARIA: </span> <P>  DAGOBERTO MARTINEZ ESCAMILLA</p>
+                <BR></BR>
+                <span>SECUNDARIA: </span> <P>SECUNDARIA TECNICA #47 "JOSE VASCONCELOS"</p>
+                    <BR></BR>    
+                <span>PREPARATORIA: </span> <P>CENTRO DE BACHILLERATO INDUSTRIAL Y DE SERVICIOS #234</p>
+                 TITULO: <P>TECNICO EN PROGRAMACION</P>   
+                 <BR></BR>              
+                 <span>UNIVERSIDAD: </span> <P>INSTITUTO TECNOLOGICO DE NUEVO LAREDO </p>
+                    <SPAn >CARRERA: </SPAn> <P>ING.SISTEMAS COMPUTACIONALES</P>
+                    <BR></BR>    
+                    
+ 
+				
+		</article>
+    </div>
+    <div class="contenedor">
+		<article>
+			<h2 id="Herramientas" class="ancla">Herramientas</h2>
+			<hr>
+      <span>VISUAL STUDIO: </span> <p>USADO PARA C#</p>
+      <SPAn>ECLIPSE: </SPAn> <P>PARA JAVA </P>
+      <SPAN>NETBEANS: </SPAN> <P>PARA JAVA</P>
+      <SPAN>ADNDROID STUDIO: </SPAN> <P>PARA ANDROID(JAVA)</P>
+      <SPAN>SQLSERVER: </SPAN> <P>PARA SQL</P>
+      <SPAN>ALGUNOS EDITORES DE CODIGO:</SPAN> 
+      <UL >
+        <LI>-SUBLIMETEXT</LI>
+        <LI>-VISUAL STUDIO CODE</LI>
+        <LI>NOTEPAD++</LI>
+      </UL>
+
+		</article>
+    </div>
+    <div class="contenedor">
+		<article>
+			<h2 id="Bases" class="ancla" >Bases de Datos</h2>
+			<hr>
+            <span>MYSQL: </span> <P>DOMINADO LO BASICO GRACIAS A LAS CLASES IMPARTIDAS EN LA PREPARATORIA Y EN TOPICOS AVANZADOS</P>
+            <BR>
+            <SPAN>SQLITE: </SPAN> <P>PARTE DE LO ENSEÑADO EN CLASES DE BASES DE DATOS EN PREPARATORIA</P>
+            <SPAN>GESTOS SLQSERVER: </SPAN> <P>APRENDIDO TANTO EN LA MATERIA DE BASE DE DATOS COMO EN EL DIA A DIA</P>
+		</article>
+    </div>
+    <div class="contenedor">
+		<article>
+			<h2  id="Lenguajes" class="ancla" >Lenguajes de Programacion</h2>
+			<hr>
+				<SPAN>C#: </SPAN> <P>LENGUAJE NATIVO ENSEÑADO DESDE LA PREPARATORIA Y UNIVERSIDAD DOMINADO EN GRAN PARTE PERO SIEMPRE SE APRENDE</P>
+                <BR>
+                    <SPAn>SQL: </SPAn> <P>ENSEÑADO DESDE LA PREPARATORIA DOMINADO A NIVEL INTERMEDIO GRACIAS AL ING ZARATE Y AL ING HUMBERTO</P>
+                    <BR></BR>
+                    <SPAn>JS: </SPAn> <P>CURSO DE SIMPOSIUM ISC Y APRENDIDO DE FORMA AUTONOMA POR MI HOBBY A EL DISEÑO WEB </P>
+                    <BR></BR>
+                    <SPAn>PHP: </SPAn> <P>APRENDIDO EN LA PREPARATORIA Y DE FORMA AUTONOMA A NIVEL INTERMEDIO</P>
+                    <SPAN>LENGUAJES DE MARCADO: </SPAN>
+                    <UL>
+                        <LI>-HTML</LI>
+                        <LI>-MARKDOWN</LI>
+                        <LI>-CSS</LI>
+                    </UL>
+                    <br>
+                  <img src="img/im3.jpg" alt="" class="imge">
+            </article>
+          </div>
+  
+  <script>
+    $(document).ready(function(){
+
+$(window).scroll(function(){
+    var barra = $(window).scrollTop();
+    var posicion = barra * 0.05;
+
+    $('body').css({
+        'background-position': ' 0 ' + posicion + 'px'
+       
+    });
+});
+var altura = $('.menu').offset().top;
+
+$(window).on('scroll', function(){
+if ( $(window).scrollTop() > altura ){
+  $('.menu').addClass('menu-fixed');
+} else {
+  $('.menu').removeClass('menu-fixed');
+}
+});
+});
+  </script>
+  </body>
+</html>
